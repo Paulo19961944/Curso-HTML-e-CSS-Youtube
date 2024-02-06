@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Seleciona Tudo */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Seleciona todo o conteúdo*/
+        body{
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /*Seleciona todos os títulos*/
+        h1{
+            margin: 1rem 0;
+        }
+
+        /*Seleciona todos os parágrafos*/
+        /*
+        p{
+            color: darkblue;
+        }*/
+
+        /* Seleciona 2 ou mais elementos */
+        h1, p{
+            color: rgb(34, 34, 187);
+        }
+
+        /* Seleciona 2 ou mais elementos */
+        body main section h1,
+        body main section p{
+            color: red;
+        }
+
+        /* Seleciona uma Classe */
+        .first-div{
+            margin-top: 2rem;
+        }
+
+        /*Seleciona uma classe e uma tag*/
+        .first-div h1{
+            color: rgb(167, 4, 167);
+        }
+
+        /*Seleciona especificamente. Aqui pegamos uma classe dentro de uma classe também*/
+        body .first-div .second-div p{
+            margin-top: 1rem;
+            color: rgb(13, 150, 13);
+        }
+    </style>
+    <title>Seletores  CSS - Exercícios</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Título HTML</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, laborum quasi pariatur a dignissimos autem similique dolorum natus amet temporibus adipisci assumenda commodi dolorem eos. Adipisci tempore veniam sunt laborum!</h1>
+            <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, hic dignissimos officiis sunt nemo incidunt eveniet earum fugit sit repellendus? Nulla excepturi officia a magnam quo corporis harum debitis repellendus.</span><span>Facilis necessitatibus totam adipisci tenetur non eum expedita autem harum officiis excepturi, fugit consequuntur? Reprehenderit, expedita quae explicabo labore quas officiis cumque facere quia commodi iure doloribus laborum, temporibus soluta!</span><span>Et obcaecati explicabo, temporibus facilis id fugit consequuntur vitae ipsa quia magnam vel, deserunt voluptates atque sunt necessitatibus optio porro maxime dolores? Esse fugit, delectus pariatur numquam placeat dolorum deleniti.</span><span>Illum provident, cumque quibusdam explicabo inventore maiores, doloribus commodi accusamus voluptatem fuga ut, ullam enim nam deserunt! Libero vel explicabo accusantium iusto ab magnam dolores! Aspernatur reiciendis sed animi ex.</span><span>Mollitia, voluptatum illum. Ad, consequuntur non architecto impedit voluptates molestiae provident quod, veniam voluptas illo quis! Placeat voluptate quos, assumenda harum doloremque saepe inventore qui at possimus labore adipisci ducimus?</span></p>
+        </section>
+    </main>
+    <div class="first-div">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel tempora quo magni perferendis voluptates illum quis id enim. Aspernatur doloremque, placeat nulla laboriosam ipsam nisi soluta suscipit! Temporibus, rerum.</h1>
+        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt excepturi placeat incidunt et soluta architecto in delectus! Reprehenderit, non, eos velit dolor a, sint minus accusamus quam quae sed temporibus.</span><span>Tempora veniam corrupti consectetur corporis, repudiandae sint dolore quibusdam obcaecati vel animi voluptate non provident, sit placeat ipsa aspernatur delectus rerum sunt dicta molestias deserunt! Ut fugit praesentium ducimus a.</span><span>Aliquid harum ut natus. Assumenda, quos harum qui debitis dolorum magnam facere. Dolores asperiores doloremque velit facilis, architecto, sunt, laborum autem debitis ad reiciendis dignissimos quos quae obcaecati impedit excepturi!</span><span>Molestiae autem labore tempore nisi dignissimos, molestias explicabo animi quisquam obcaecati veniam dicta nobis maxime non ipsum, praesentium distinctio corrupti fuga aspernatur cum? Deleniti modi numquam repudiandae provident, commodi tenetur!</span><span>Ab tenetur ratione commodi aliquid quaerat cumque quidem mollitia accusamus. Autem nam enim, explicabo animi harum quasi quidem laudantium ratione, nesciunt voluptatum nihil recusandae dolor temporibus assumenda quos maxime repellat.</span></p>
+        <div class="second-div">
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nulla impedit debitis, assumenda eius ipsa accusantium dicta veniam fugiat et facere. Ipsam ab temporibus hic. Placeat ut dicta maiores aliquam!</span><span>Dolores sequi hic accusamus ratione at numquam tempora nam eos, itaque maiores, est necessitatibus, suscipit cumque ipsa ullam! Sunt aliquid beatae cupiditate excepturi harum tempore ipsa nostrum consequuntur ex fuga?</span><span>Obcaecati et voluptates laborum nulla repellendus. Libero consequuntur ex necessitatibus aperiam voluptas facere, nihil vero nemo labore similique! Quae repellendus, eligendi animi autem recusandae suscipit eveniet assumenda mollitia magnam maiores!</span><span>Eos voluptatibus iste adipisci itaque quos, praesentium, voluptatum illum, quibusdam incidunt amet a similique dolore porro mollitia nihil necessitatibus sit libero debitis quo quisquam doloribus. Beatae odit ipsum eius quisquam.</span><span>Dignissimos, incidunt repellendus alias corporis aut totam commodi necessitatibus blanditiis id deleniti, illum pariatur quod a dolorum consectetur voluptates sed quos quia, harum provident cupiditate atque. Magni voluptatibus ea atque!</span></p>
+        </div>
+    </div>
+</body>
+</html>

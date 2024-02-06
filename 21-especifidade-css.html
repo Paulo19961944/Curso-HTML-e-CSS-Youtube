@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style, ID, Classes, Atributos e pseudo-classes, Elementos e Pseudo Elementos*/
+        body#b.b p#p.p{
+            background: rgb(247, 105, 247) !important; /* Maior Especifidade */
+        }
+
+        #p{
+            background: red;
+        }
+
+        #p.p{
+            background: yellow;
+        }
+
+        p#p.p{
+            background: turquoise;
+        }
+    </style>
+    <title>Especifidade CSS</title>
+</head>
+<body id="b" class="b">
+    <p class="p" id="p" style="background: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem explicabo veritatis sit laborum repellat ipsum, tempore quidem eaque accusamus voluptas facilis, atque maxime minus necessitatibus. Blanditiis sit minus mollitia!</p>
+</body>
+</html>

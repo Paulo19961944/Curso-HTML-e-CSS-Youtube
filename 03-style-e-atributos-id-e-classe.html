@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style e Atributos ID e Classe</title>
+    <style>
+
+        /**Classes e ID são muito utilizadas. Uma classe pode ser referenciada 
+        varias vezes em um documento.
+        
+        /* Porém uma ID só pode ser referenciada uma unica vez. Podemos declarar mais
+        de uma classe de uma vez só.*/
+
+        #cabecalho1 {
+            color: lightgreen;
+        }
+
+        #cabecalho2 {
+            color: darkturquoise;
+        }
+
+        .fundo-vermelho {
+            background-color: red;
+        }
+
+        b {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="cabecalho1" class="fundo-vermelho borda-esquerda">Vai vir aqui</h1>
+    <h1 id="cabecalho2" class="fundo-vermelho">Vai vir aqui</h1>
+    <p>Um texto <b>qualquer</b></p>
+</body>
+
+</html>

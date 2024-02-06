@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        h1{
+            margin: 2rem 0;
+        }
+
+        .pai .irmao{
+            margin-bottom: 2rem;
+        }
+
+        /*Seleciona todo h1 que vem depois de p*/
+        .pai .irmao h1+p{
+            color: red;
+        }
+
+        /*Seleciona todo p que vem depois de h1*/
+        .pai .irmao p+h1{
+            color: rgb(4, 123, 144) ;
+        }
+
+        /*Seleciona todo Dois que vem depois de um*/
+        .pai .um~ .dois{
+            color: darkgreen;
+        }
+
+        /*Seleciona um atributo*/
+        [meu-atributo="valor"]{
+            background-color: cadetblue;
+        }
+    </style>
+    <title>Seletores de irmãos</title>
+</head>
+<body>
+    <input type="checkbox" name="name" id="name" checked>
+    <div class="pai">
+        <div class="irmao">
+            <h1 meu-atributo="valor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem reprehenderit accusamus at iure distinctio perferendis aliquam cumque maiores enim. Officiis quisquam ea debitis, nulla libero praesentium ipsam harum suscipit?</h1>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, architecto, omnis impedit cum repudiandae eaque qui odio eligendi placeat dolore nesciunt nisi magni rerum, eius expedita. Quidem voluptatibus consequatur totam?</span><span>Voluptatum consequuntur dolore rerum cumque eveniet nobis dolorem optio harum iusto, beatae in similique ea expedita eos, qui laboriosam? Laboriosam accusamus commodi, molestias at pariatur laborum quidem qui deserunt debitis.</span><span>Impedit officiis quod, vero suscipit, deserunt ab quasi mollitia totam veniam aspernatur expedita molestias? Tempore, ratione eaque! Consequuntur numquam, autem unde reprehenderit maiores ipsa, officiis aliquid totam adipisci eaque at.</span><span>Repudiandae neque rem molestiae, repellat labore molestias est, iste nemo expedita nihil accusamus dicta laudantium rerum sequi temporibus recusandae modi ipsam magnam dolore! Hic nostrum in sequi vel nesciunt nobis.</span><span>Nostrum sequi illo hic saepe assumenda harum, ad, id maiores nisi obcaecati iusto possimus temporibus enim soluta quo quod excepturi natus optio deserunt amet eos, voluptatibus dolorem commodi? Blanditiis, nostrum.</span></p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo labore quibusdam placeat assumenda? Tempore tenetur corrupti aliquam dignissimos neque adipisci distinctio, recusandae accusantium! Reprehenderit nemo rem possimus corrupti officia.</h1>
+            <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quia laborum cum maxime repudiandae inventore recusandae, adipisci nesciunt blanditiis suscipit aliquam, labore nemo deserunt natus similique debitis nisi laboriosam delectus.</span><span>Hic officia dicta sit laborum dolores perspiciatis, aliquid rerum quis animi blanditiis velit labore, architecto id. Sunt delectus debitis labore atque. Quos ab quidem ad illo a unde magni quaerat.</span><span>Fuga cumque sapiente labore nemo asperiores quo maiores similique vitae reiciendis officiis obcaecati minima sequi dignissimos soluta, perferendis officia optio. Maiores quasi non id accusantium, aut veniam maxime ad officiis!</span><span>Iste veniam consectetur optio magnam culpa accusamus nulla? Consequuntur labore eius maxime itaque, expedita sequi culpa quisquam facere! Harum similique nam ea distinctio nostrum eum atque voluptates accusamus expedita repellendus.</span><span>Vitae pariatur ab consequatur, amet laborum perferendis tempora beatae reprehenderit facere eos adipisci sint possimus fuga numquam blanditiis aperiam eligendi a fugiat nostrum quas, officia sed eius alias! Accusamus, quibusdam!</span></p>
+        </div>
+        <div class="irmao">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem reprehenderit accusamus at iure distinctio perferendis aliquam cumque maiores enim. Officiis quisquam ea debitis, nulla libero praesentium ipsam harum suscipit?</h1>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, architecto, omnis impedit cum repudiandae eaque qui odio eligendi placeat dolore nesciunt nisi magni rerum, eius expedita. Quidem voluptatibus consequatur totam?</span><span>Voluptatum consequuntur dolore rerum cumque eveniet nobis dolorem optio harum iusto, beatae in similique ea expedita eos, qui laboriosam? Laboriosam accusamus commodi, molestias at pariatur laborum quidem qui deserunt debitis.</span><span>Impedit officiis quod, vero suscipit, deserunt ab quasi mollitia totam veniam aspernatur expedita molestias? Tempore, ratione eaque! Consequuntur numquam, autem unde reprehenderit maiores ipsa, officiis aliquid totam adipisci eaque at.</span><span>Repudiandae neque rem molestiae, repellat labore molestias est, iste nemo expedita nihil accusamus dicta laudantium rerum sequi temporibus recusandae modi ipsam magnam dolore! Hic nostrum in sequi vel nesciunt nobis.</span><span>Nostrum sequi illo hic saepe assumenda harum, ad, id maiores nisi obcaecati iusto possimus temporibus enim soluta quo quod excepturi natus optio deserunt amet eos, voluptatibus dolorem commodi? Blanditiis, nostrum.</span></p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo labore quibusdam placeat assumenda? Tempore tenetur corrupti aliquam dignissimos neque adipisci distinctio, recusandae accusantium! Reprehenderit nemo rem possimus corrupti officia.</h1>
+            <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quia laborum cum maxime repudiandae inventore recusandae, adipisci nesciunt blanditiis suscipit aliquam, labore nemo deserunt natus similique debitis nisi laboriosam delectus.</span><span>Hic officia dicta sit laborum dolores perspiciatis, aliquid rerum quis animi blanditiis velit labore, architecto id. Sunt delectus debitis labore atque. Quos ab quidem ad illo a unde magni quaerat.</span><span>Fuga cumque sapiente labore nemo asperiores quo maiores similique vitae reiciendis officiis obcaecati minima sequi dignissimos soluta, perferendis officia optio. Maiores quasi non id accusantium, aut veniam maxime ad officiis!</span><span>Iste veniam consectetur optio magnam culpa accusamus nulla? Consequuntur labore eius maxime itaque, expedita sequi culpa quisquam facere! Harum similique nam ea distinctio nostrum eum atque voluptates accusamus expedita repellendus.</span><span>Vitae pariatur ab consequatur, amet laborum perferendis tempora beatae reprehenderit facere eos adipisci sint possimus fuga numquam blanditiis aperiam eligendi a fugiat nostrum quas, officia sed eius alias! Accusamus, quibusdam!</span></p>
+        </div>
+
+        <div class="dois">2222222222</div>
+        <div class="um">11111111111</div>
+        <div class="dois">2222222222</div>
+        <div class="dois">2222222222</div>
+    </div>
+</body>
+</html>
