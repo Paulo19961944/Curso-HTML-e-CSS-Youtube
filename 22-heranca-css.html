@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Os elementos filhos de body irão herdar os valores*/
+        body{
+            font-family: sans-serif;
+            color: #f00;
+        }
+
+        /*Os elementos filhos de #texto irão herdar os valores*/
+        #texto{
+            font-family: serif;
+            color: #00f;
+            font-size: 2em;
+        }
+
+        /*Desativa a Herança*/
+        #texto h1{
+            font-size: initial;
+        }
+
+        /*Ativa a Herança*/
+        #texto p{
+            font-size: inherit;
+        }
+    </style>
+    <title>Herança em CSS</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis dolores itaque veritatis soluta distinctio rerum tempore! Quo ipsam cumque odit omnis! Sed laborum ut obcaecati, illo eum veniam perspiciatis?</span><span>Est aliquid porro maxime excepturi, incidunt harum sequi! Cumque magni mollitia eos modi adipisci vero laboriosam nobis consequuntur, fuga itaque reiciendis, quis asperiores facilis quibusdam dolorem quod, sequi vitae suscipit!</span><span>Velit nobis quas animi quis assumenda nesciunt facere aperiam delectus fugiat deleniti tenetur suscipit consequuntur veritatis commodi sequi quod inventore debitis itaque quidem sunt iure accusantium, in vero saepe. Rem.</span><span>Quis atque recusandae laborum numquam praesentium quisquam, in, cumque animi ducimus, saepe necessitatibus. Quidem odit adipisci in quasi aut. Atque aliquam ea ullam molestiae cupiditate a, vero velit ab sequi?</span></p>
+    <div id="texto">
+        <h1>Teste 2</h1>
+        <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi accusamus earum itaque magni iusto ipsum nulla ullam nihil, debitis magnam eveniet aperiam maxime placeat dolores, molestias consequuntur officiis atque eaque.</span><span>Tempora hic rem in quam rerum perspiciatis expedita reiciendis consequuntur ipsum suscipit illo ratione, officiis blanditiis dolores, tempore veniam iste dolorum recusandae veritatis eveniet? Asperiores ipsa voluptates ex facilis tempore.</span><span>Adipisci numquam tempora optio, dolor quo eius ullam impedit quia nulla nobis iusto qui reprehenderit cumque dicta atque hic natus accusamus praesentium! Accusantium quam laboriosam sint repellendus deleniti unde quibusdam.</span><span>Cumque adipisci nemo enim eum, eaque ut necessitatibus itaque minus assumenda recusandae ad porro sed dicta deleniti ipsum possimus aliquam perferendis et deserunt, totam eius hic. Tempora ad provident debitis!</span></p>
+    </div>
+    <a href="https://www.sitepoint.com/css-inheritance-introduction/">Clique aqui para ver a herança.</a>
+</body>
+</html>
