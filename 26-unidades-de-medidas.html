@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%; /*Elemento Root valendo 10px*/
+            scroll-behavior: smooth;
+        }
+
+        p.paragrafo-1{
+            font-size: 20px; /*Medida Absoluta - Não se baseia em nada | Sempre vai ter 20 px*/
+        }
+
+        .pai{
+            max-width: 100vw; /*100% da Largura do Viewport - Tela Inteira*/
+            min-height: 100vh; /*100% da Altura da Viewport - Tela Inteira*/ 
+            background: #ff0;
+            font-size: 50px;
+            overflow: hidden;
+        }
+
+        p.paragrafo-2{
+            font-size: 0.5em; /*Baseada em um elemento pai*/
+        }
+
+        p.paragrafo-3{
+            font-size: 2rem; /*Baseado no Elemento Root - HTML*/
+        }
+
+        .filha{
+            background: #1caebe;
+            width: 50%; /*Largura ao Elemento Pai*/
+        }
+
+        .color-1{
+            background: turquoise;
+        }
+
+        .color-2{
+            background: violet;
+        }
+    </style>
+    <title>Unidades de Medida</title>
+</head>
+<body>
+    <a href="#home">Home</a>
+    <a href="#one">One</a>
+    <a href="#two">Two</a>
+    <div class="pai" id="home">
+        <div class="filha">
+            <p class="paragrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iste nesciunt quis. Excepturi eaque enim, delectus consectetur voluptas magnam inventore illo maiores quod possimus dolorum distinctio qui ipsam error? Eos.</p><br>
+            <p class="paragrafo-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ea, aut molestiae ipsam beatae veniam voluptate officiis nulla odio eaque iste illo eos doloribus placeat dolor eum cumque. Quo, aspernatur.</p><br>
+            <p class="paragrafo-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quia molestias nemo distinctio nam cumque laudantium animi eveniet esse soluta excepturi, sint sequi facere, rem ducimus minima illum veritatis autem!</p><br>
+            <p class="paragrafo-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id esse illo veniam nisi tempore officiis excepturi amet quam a ipsa ullam cumque facere voluptates sunt, repellat dolores assumenda soluta!</p>
+        </div>
+    </div>
+    <div class="pai color-1" id="one">
+        <p class="paragrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iste nesciunt quis. Excepturi eaque enim, delectus consectetur voluptas magnam inventore illo maiores quod possimus dolorum distinctio qui ipsam error? Eos.</p><br>
+        <p class="paragrafo-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ea, aut molestiae ipsam beatae veniam voluptate officiis nulla odio eaque iste illo eos doloribus placeat dolor eum cumque. Quo, aspernatur.</p><br>
+        <p class="paragrafo-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quia molestias nemo distinctio nam cumque laudantium animi eveniet esse soluta excepturi, sint sequi facere, rem ducimus minima illum veritatis autem!</p><br>
+        <p class="paragrafo-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id esse illo veniam nisi tempore officiis excepturi amet quam a ipsa ullam cumque facere voluptates sunt, repellat dolores assumenda soluta!</p>
+    </div>
+    <div class="pai color-2" id="two">
+        <p class="paragrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iste nesciunt quis. Excepturi eaque enim, delectus consectetur voluptas magnam inventore illo maiores quod possimus dolorum distinctio qui ipsam error? Eos.</p><br>
+        <p class="paragrafo-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ea, aut molestiae ipsam beatae veniam voluptate officiis nulla odio eaque iste illo eos doloribus placeat dolor eum cumque. Quo, aspernatur.</p><br>
+        <p class="paragrafo-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quia molestias nemo distinctio nam cumque laudantium animi eveniet esse soluta excepturi, sint sequi facere, rem ducimus minima illum veritatis autem!</p><br>
+        <p class="paragrafo-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id esse illo veniam nisi tempore officiis excepturi amet quam a ipsa ullam cumque facere voluptates sunt, repellat dolores assumenda soluta!</p>
+    </div>
+</body>
+</html>
