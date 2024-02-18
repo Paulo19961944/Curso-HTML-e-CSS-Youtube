@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row; 
+            justify-content: center; /*Eixo Principal*/
+            align-items: flex-start; /*Eixo Perpendicular*/
+            flex-wrap: wrap;
+            gap: 1rem;
+            background: #ff0;
+            height: 500px;
+        }
+
+        .flex-item{
+            margin-top: 1rem;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 0.5rem;
+            width: 150px;
+            padding: 0.75rem;
+            background-color: #f00;
+            color: #fff;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Lorem</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Tres</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+</body>
+</html>
